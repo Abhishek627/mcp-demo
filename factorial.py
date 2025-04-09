@@ -1,17 +1,14 @@
 def factorial(n):
     fact = 1
-    for i in range(1, n):
+    for i in range(1, n + 1):  # Include n in the range
         fact *= i
     return fact
 
 def is_even(n):
-    if n % 2 = 0:
-        return True
-    else
-        return False
+    return n % 2 == 0  # Simplified logic
 
 num = 5
-result = factoriall(num)
+result = factorial(num)  # Fixed typo in function call
 print("Factorial of", num, "is", result)
 
 if is_even(result):
